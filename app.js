@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
     
         if (req.url !== '/favicon.ico') {
             if (req.url === '/') {
-            res.write(`Pick a number between ${min-1} and ${max} and help me finding it. Is your number ${guess} ?<br>${buttons}`);
+            res.write(`Pick a number between ${min-min} and ${max} and help me finding it. Is your number ${guess} ?<br>${buttons}`);
         }
 
         else if (req.url === '/more') {
